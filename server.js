@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path');
 const app = express()
 const port = 3000
 
@@ -78,7 +79,7 @@ exampleData.recentGames.push({
     teamOne:teamOne,
     teamTwo:teamTwo
 })
-    res.end("accepted")
+res.sendFile(path.join(__dirname, 'public/index.html'));
 })
 
 

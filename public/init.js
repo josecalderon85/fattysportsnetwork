@@ -57,3 +57,7 @@ fetch("http://localhost:3000/football")
     }
     // console.log("server response",data)
   });
+
+  var yourJsFunction = function(event){
+        console.log("I am your function", event)
+  }
